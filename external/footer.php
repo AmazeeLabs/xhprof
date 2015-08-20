@@ -8,7 +8,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 }
 
 if (extension_loaded('xhprof') && $_xhprof['doprofile'] === true) {
-    $profiler_namespace = $_xhprof['namespace'];  // namespace for your application
+    $profiler_namespace = getenv('AMAZEEIO_SITENAME');  // namespace for your application
     $xhprof_data = xhprof_disable();
     $xhprof_runs = new XHProfRuns_Default();
     $run_id = $xhprof_runs->save_run($xhprof_data, $profiler_namespace, null, $_xhprof);
