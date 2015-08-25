@@ -9,7 +9,7 @@ $_xhprof['dbpass'] = 'xhprof';
 $_xhprof['dbname'] = 'xhprof';
 $_xhprof['dbadapter'] = 'Pdo';
 $_xhprof['servername'] = 'vagrant';
-$_xhprof['url'] = 'http://xhprof.drupalhostingdev1.vagrant.amazee.io/xhprof_html';
+$_xhprof['url'] = '/';
 
 /*
  * MySQL/MySQLi/PDO ONLY
